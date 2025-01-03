@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{b9c14b5d-d2b2-475d-9e58-1da1f3a2ae5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{572868e2-a6e6-44b0-ade7-99bae2253160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\cleaners">
+      <UniqueIdentifier>{2524426d-d565-4c2c-a957-9ca91f891a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\injector">
+      <UniqueIdentifier>{5da44884-ba3e-461c-b1bb-409ca19efd81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main\cleaners\Explorer.cpp">
+      <Filter>main\cleaners</Filter>
+    </ClCompile>
+    <ClCompile Include="main\cleaners\Registry.cpp">
+      <Filter>main\cleaners</Filter>
+    </ClCompile>
+    <ClCompile Include="main\injector\Injector.cpp">
+      <Filter>main\injector</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Process.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main\cleaners\Explorer.h">
+      <Filter>main\cleaners</Filter>
+    </ClInclude>
+    <ClInclude Include="main\cleaners\Registry.h">
+      <Filter>main\cleaners</Filter>
+    </ClInclude>
+    <ClInclude Include="main\injector\Injector.h">
+      <Filter>main\injector</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Logger.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Process.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
